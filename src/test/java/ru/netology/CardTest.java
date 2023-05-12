@@ -19,7 +19,6 @@ public class CardTest {
     @Test
     void shouldTestCorrectForm() {
         $x("//input[@placeholder=\"Город\"]").val("Майкоп");
-        $x("//input[@type=\"tel\"]").doubleClick().sendKeys("DELETE");
         String planingDate = LocalDate.now().plusDays(3).format(DateTimeFormatter.ofPattern("dd.MM.yyyy"));
         $x("//input[@placeholder=\"Дата встречи\"]").val(planingDate);
         $("[data-test-id='name'] input").val("Крылова Ольга");

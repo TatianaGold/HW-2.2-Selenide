@@ -15,8 +15,8 @@ plugins {
     }
 
     dependencies {
-        testImplementation 'org.junit.jupiter:junit-jupiter:5.6.1'
-        testImplementation 'com.codeborne:selenide:5.19.0'
+        testImplementation 'org.junit.jupiter:junit-jupiter:5.9.2'
+        testImplementation 'com.codeborne:selenide:6.12.3'
     }
 
     test {

@@ -1,0 +1,1 @@
+[![Build status](https://ci.appveyor.com/api/projects/status/lq4d0730c3yrqcgh?svg=true)](https://ci.appveyor.com/project/TatianaGold/hw-2-2-selenide)

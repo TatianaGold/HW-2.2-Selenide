@@ -1,6 +1,6 @@
 package ru.netology;
 
-import com.codeborne.selenide.Configuration;
+import io.github.bonigarcia.wdm.WebDriverManager;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.*;
 
@@ -11,10 +11,18 @@ import java.time.format.DateTimeFormatter;
 import static com.codeborne.selenide.Condition.exactText;
 import static com.codeborne.selenide.Condition.visible;
 import static com.codeborne.selenide.Selenide.*;
+
 public class CardTest {
     @BeforeEach
     public void openPage() {
+        WebDriverManager.chromedriver().setup();
+        webdriver().driver().browser().isChrome();
         open("http://localhost:9999/");
+    }
+
+    @AfterEach
+    public void endTest() {
+        closeWebDriver();
     }
 
     @Test

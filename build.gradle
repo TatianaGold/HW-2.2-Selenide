@@ -17,9 +17,9 @@ plugins {
     dependencies {
         testImplementation 'org.junit.jupiter:junit-jupiter:5.9.2'
         testImplementation 'com.codeborne:selenide:6.12.3'
-        testImplementation 'org.testng:testng:7.1.0'
     }
 
     test {
         useJUnitPlatform()
+        systemProperty 'selenide.headless', System.getProperty('selenide.headless')
     }
